@@ -2,7 +2,7 @@ class ColorPalette {
     constructor({ element, colors = [] }) {
         this.element = element;
         this.colorElements = [];
-        
+
         this.colors = colors;
         this.currentColor = null;
 
@@ -22,7 +22,7 @@ class ColorPalette {
 
         if (target.tagName === 'LI') {
             this.currentColor = target.style.backgroundColor;
-            
+
             for (let colorElement of this.colorElements) {
                 colorElement.classList.remove('selected');
             }

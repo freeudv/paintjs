@@ -16,7 +16,7 @@ class ColorPicker {
 
     init() {
         this.previewElement.style.backgroundColor = `rgb(${this.color.red},${this.color.green},${this.color.blue})`;
-        
+
         this.element
             .querySelector('.color-picker__close-button').addEventListener('click', this.close.bind(this));
 
